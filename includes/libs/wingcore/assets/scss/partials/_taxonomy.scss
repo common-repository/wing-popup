@@ -1,0 +1,114 @@
+/**
+ * 06. Taxonomy
+ */
+.wdpop_core-taxonomy{
+  max-width: 95%;
+
+  > .wdpop_core-field{
+    border-top: none !important;
+  }
+
+  > .wdpop_core-field-heading{
+    font-size: 1.1em;
+    padding: 20px !important;
+    border: 1px solid #ddd;
+  }
+
+  > .wdpop_core-field-subheading{
+    font-size: 12px;
+    padding: 15px !important;
+    border: 1px solid #ddd;
+  }
+
+  > .wdpop_core-field-submessage{
+
+    .wdpop_core-submessage{
+      padding: 15px;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-right-width: 1px;
+      border-right-style: solid;
+    }
+  }
+
+  > .wdpop_core-field-notice{
+    background-color: transparent;
+  }
+
+  .wdpop_core-section-title{
+    display: block;
+    padding: 15px ;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+  }
+}
+
+.wdpop_core-taxonomy-add-fields{
+
+  > .wdpop_core-field{
+    padding: 8px 0;
+
+    > .wdpop_core-title{
+      float: none;
+      width: 100%;
+      padding: 2px 2px 4px 0;
+
+      h4{
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+
+    > .wdpop_core-fieldset{
+      float: none;
+      width: 100%;
+
+      > .wdpop_core-help{
+        right: -5px;
+      }
+    }
+  }
+
+  + p.submit{
+    margin-top: 0;
+  }
+}
+
+.wdpop_core-taxonomy-edit-fields{
+
+  > .wdpop_core-field{
+    padding: 20px 0;
+
+    > .wdpop_core-title{
+      width: 200px;
+
+      h4{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.3;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    > .wdpop_core-fieldset{
+      width: calc(100% - 220px);
+
+      > .wdpop_core-help{
+        top: -5px;
+        right: -5px;
+      }
+    }
+  }
+
+  > .wdpop_core-field-submessage{
+    margin: 20px 0;
+  }
+
+  > .wdpop_core-field-subheading,
+  > .wdpop_core-field-heading{
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+}

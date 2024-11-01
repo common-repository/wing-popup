@@ -1,0 +1,157 @@
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width:1200px){
+
+  .wdpop_core-metabox{
+
+    .wdpop_core-field{
+
+      .wdpop_core-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .wdpop_core-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:782px){
+
+  .wdpop_core-header-inner{
+    text-align: center;
+
+    h1{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .wdpop_core-form-result{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .wdpop_core-search,
+  .wdpop_core-header-right,
+  .wdpop_core-header-left{
+    width: 100%;
+  }
+
+  .wdpop_core-search{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .wdpop_core-footer{
+    text-align: center;
+  }
+
+  .wdpop_core-buttons{
+    float: none;
+  }
+
+  .wdpop_core-copyright{
+    float: none;
+    margin-top: 10px;
+  }
+
+  .wdpop_core-nav,
+  .wdpop_core-expand-all,
+  .wdpop_core-reset-section,
+  .wdpop_core-nav-background{
+    display: none !important;
+  }
+
+  .wdpop_core-nav-normal + .wdpop_core-content{
+    margin-left: 0;
+  }
+
+  .wdpop_core-section-title,
+  .wdpop_core-section{
+    display: block !important;
+  }
+
+  .wdpop_core-field{
+
+    .wdpop_core-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .wdpop_core-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .wdpop_core-field-color{
+
+    .button.wp-picker-clear{
+      padding: 0 8px;
+      line-height: 2.14285714;
+      min-height: 32px;
+    }
+  }
+
+  .wdpop_core-profile-options,
+  .wdpop_core-taxonomy-edit-fields{
+
+    > .wdpop_core-field{
+
+      > .wdpop_core-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      > .wdpop_core-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .wdpop_core-nav-menu-options{
+
+    > .wdpop_core-fields{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      > .wdpop_core-field{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 782px) {
+
+  .wdpop_core-modal{
+
+    .wdpop_core-modal-inner{
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+
+  .wdpop_core-modal{
+
+    .wdpop_core-modal-inner{
+      height: auto;
+    }
+
+    .wdpop_core-modal-content{
+      height: calc(100vh - 200px);
+    }
+  }
+}

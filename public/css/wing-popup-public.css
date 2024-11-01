@@ -1,0 +1,86 @@
+/* All the CSS for public-facing functionality */
+ 
+.admin-bar .wing-modal--item{
+    margin-top: 32px;
+}
+.wing--popup-wrapper{
+    text-align: center;
+}
+.modal-fullscreen .modal-content {
+    height: auto;
+}
+.wing-modal--item .modal-content{
+    border-radius: 0;
+}
+/* Positions */
+.wdpop_core_top_left{
+    margin-top: 0;
+    margin-left: unset;
+}
+.wdpop_core_top_right{
+    margin-top: 0;
+    margin-right: unset;
+}
+.wdpop_core_top_center{
+    margin-top: 0;
+}
+.wdpop_core_middle_left{
+    margin-left: unset;
+}
+.wdpop_core_middle_right{
+    margin-right: unset;
+}
+
+.wdpop_core_bottom_left{
+    align-items: flex-end;
+    margin-left: 0;
+}
+.wdpop_core_bottom_right{
+    align-items: flex-end;
+    margin-right: 0;
+}
+.wdpop_core_bottom_center{
+    align-items: flex-end;
+}
+
+
+.wing--popup-close-btn{
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 24px;
+    padding-bottom: 16px;
+    padding-top: 11px;
+    line-height: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #212529;
+    color: #212529;
+}
+.wing--popup-close-btn:hover{
+    color: #EB1E1E;
+    border-color: #EB1E1E;
+}
+
+
+.wdpop_core--popup-area{
+    position: relative;
+}
+.wdpop_core--popup-area .wing--popup-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.wing--popup-content-wrap{
+    padding: 35px;
+}
+.wing--popup-title{
+    margin-bottom: 20px;
+}
+.wing--popup-content{
+    margin-bottom: 20px;
+}
+.wing-popup--image{
+    max-width:100%;
+}

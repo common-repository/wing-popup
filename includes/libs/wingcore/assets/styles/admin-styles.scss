@@ -1,0 +1,331 @@
+
+@import "colors";
+
+$select_border_color: rgba(170, 170, 170, 0.38);
+$wdpop_core_dark_bg: $color_gray_900;
+
+
+@mixin header-footer {
+    // border-width: $border_0 !important;
+    // border-radius: 10px;
+    border-color: $wdpop_core_dark_bg;
+    background-color: $wdpop_core_dark_bg;
+    background: $wdpop_core_dark_bg;
+    color: $color_light;
+}
+
+.wdpop_core{
+    &.wdpop_core-options{
+        &.wdpop_core-theme-light{
+            .wdpop_core-container{
+                .button{
+                    &.button-primary{
+                        border-width: $border_0 !important;
+                        background-color: $color_primary !important;
+                        &:hover{
+                            background-color: $color_primary_active !important;
+                        }
+                    }
+                    &.wdpop_core-warning-primary{
+                        border-width: $border_0 !important;
+                        background-color: $color_danger !important;
+                        &:hover{
+                            background-color: $color_danger_active !important;
+                        }
+                    }
+                    &.button-small,
+                    &.button-secondary{
+                        border-color: $color_primary !important;
+                        color: $color_primary !important;
+                        &:hover{
+                            background-color: $color_primary_light !important;
+                        }
+                    }
+                    &.wp-color-result{
+                        border-color: $color_primary !important;
+                        color: $color_primary !important;
+                    }
+                }
+                .wdpop_core-header{
+                    .wdpop_core-header-inner {
+                        @include header-footer;
+                        h1{
+                            color: $color_light;
+                        }
+                        .wdpop_core-form-result{
+                            &.wdpop_core-form-success{
+                                background-color: $color_success !important;
+                                color: $color_light !important;
+                            }
+                            &.wdpop_core-form-warning{
+                                background-color: $color_warning !important;
+                                color: $color_dark !important;
+                            }
+                        }  
+                    }
+                }
+                .wdpop_core-footer{
+                    @include header-footer;
+                }
+
+                .wdpop_core-wrapper{
+                    .wdpop_core-nav{
+                        .wdpop_core-tab-item{
+                            background-color: $wdpop_core_dark_bg;
+                            background: $wdpop_core_dark_bg;
+                            color: $color_light;
+                            
+                            a{
+                                color: $color_light;
+                                background-color: $wdpop_core_dark_bg;
+                                border-radius: 0px;
+                                border-color: $wdpop_core_dark_bg !important;
+                                &:hover,
+                                &.wdpop_core-active{
+                                    background-color: $color_danger !important;
+                                }
+                            }
+                            
+                            
+                            &.wdpop_core-tab-expanded{
+                                ul{
+                                    
+                                    a{
+                                        position: relative;
+                                        padding-left: 45px;
+                                        &:before{
+                                            content: "";
+                                            height: 6px;
+                                            width: 6px;
+                                            border-radius: 50rem;
+                                            background: currentColor;
+                                            position: absolute;
+                                            left: 30px;
+                                            color: $color_light;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                        }
+                                        &.wdpop_core-active{
+                                            &:before{
+                                                color : $color_light;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                
+                            }
+
+                        }
+                    }
+                    .wdpop_core-nav-background{
+                        border-width: $border_0 !important;
+                        background-color: $wdpop_core_dark_bg;
+                        
+                    }
+                    .wdpop_core-content{
+                        .wdpop_core-field{
+                            border-width: $border_0 !important;
+                            &.wdpop_core-field-button_set{
+                                .wdpop_core--button{
+                                    border-color: $border_color_btn_set !important;
+                                    &.wdpop_core--active{
+                                        background-color: $color_primary !important;
+                                    }
+                                }
+                            }
+                            input[type=color],
+                            input[type=date],
+                            input[type=datetime-local],
+                            input[type=datetime],
+                            input[type=email],
+                            input[type=month],
+                            input[type=number],
+                            input[type=password],
+                            input[type=search],
+                            input[type=tel],
+                            input[type=text],
+                            input[type=time],
+                            input[type=url],
+                            input[type=week],
+                            select,
+                            textarea {
+                                box-shadow: 0 0 0 transparent;
+                                border-radius: 4px;
+                                border: 1px solid #2476ff;
+                                background-color: #fff;
+                                color: #2c3338;
+                                background-color: $color_gray_200 !important;
+                                border-color: $color_gray_200 !important;
+                                border-width: 2px;
+                                &:focus{
+                                    background-color: $color_gray_200 !important;
+                                    border-color: $color_primary !important;
+                                    
+                                }
+                            }
+                            .wdpop_core--switcher{
+                                background-color: $color_danger;
+                                border-radius: 20px;
+                                padding: 0px 5px;
+                                &.wdpop_core--active{
+                                    background-color: $color_success;
+                                }
+                                .wdpop_core--ball{
+                                    border-radius: 15px;
+                                    background-color: $switcher_ball_color;
+                                }
+                            }
+                            input[type=checkbox],
+                            input[type=radio] {
+                                border-radius: 2px !important;
+                                height: 18px;
+                                width: 18px;
+                                box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+                                background-color: $color_gray_300 !important;
+                                border-width: 0px;
+                            }
+                            input[type=checkbox]:checked::before {
+                                content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23FFFFFF%27%2F%3E%3C%2Fsvg%3E") !important;
+                                margin-top: 0px !important;
+                                margin-left: 0px !important;
+                                background-color: $color_success !important;
+                                border-radius: 2px !important;
+                                width: 18px;
+                                height: 18px;
+                            }
+                            input[type=radio] {
+                                border-radius: 100% !important;
+                            }
+
+                            input[type=radio]:checked::before {
+                                content: "";
+                                border-radius: 50%;
+                                width: 14px;
+                                height: 14px;
+                                margin: 2px;
+                                background-color: $color_primary;
+                            }
+                            input[readonly=readonly] {
+                                background-color: $color_gray_300 !important;
+                                border-color: $color_gray_300 !important;
+                            }
+                            
+                        }
+                        .wdpop_core-field{
+                            &.wdpop_core-field-typography,
+                            &.wdpop_core-field-select{
+                                .chosen-container{
+                                    border-color: $select_border_color !important;
+                                    *{
+                                        border-color: $select_border_color !important;
+                                    }
+                                }
+                            }
+                            .button{
+                                &.button-primary{
+                                    &.wdpop_core-repeater-add{
+                                        &:focus{
+                                            box-shadow: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            &.wdpop_core-field-group{
+                                .wdpop_core-cloneable-title{
+                                    border-color: $color_gray_300 !important;
+                                    &.ui-accordion-header-active,
+                                    &:active,
+                                    &:focus,
+                                    &:hover{
+                                        border-color: $color_gray_300 !important;
+                                        background-color: $color_gray_300 !important;
+                                    }
+                                }
+                                .wdpop_core-cloneable-content{
+                                    border-color: $color_gray_300 !important;
+                                }
+                            }
+                            &.wdpop_core-field-accordion{
+                                .wdpop_core-accordion-title{
+                                    border-color: $color_gray_300 !important;
+                                    &.ui-accordion-header-active,
+                                    &:active,
+                                    &:focus,
+                                    &:hover{
+                                        border-color: $color_gray_300 !important;
+                                        background-color: $color_gray_300 !important;
+                                    }
+                                }
+                                .wdpop_core-accordion-content{
+                                    border-color: $color_gray_300 !important;
+                                }
+                            }
+                            &.wdpop_core-field-spacing,
+                            &.wdpop_core-field-spinner,
+                            &.wdpop_core-field-border,
+                            &.wdpop_core-field-dimensions{
+                                .wdpop_core--label{
+                                    border-color: $color_gray_300 !important;
+                                    background-color: $color_gray_300 !important;
+                                }
+                            }
+                            &.wdpop_core-field-spinner{
+                                .ui-button{
+                                    border-color: $color_gray_300 !important;
+                                    background-color: $color_gray_300 !important;
+                                }
+                            }
+                            &.wdpop_core-field-slider,
+                            &.wdpop_core-field-number{
+                                .wdpop_core--unit{
+                                    background-color: $color_gray_300 !important;
+                                    border-color: $color_gray_300 !important;
+                                }
+                                    
+                            }
+                            &.wdpop_core-field-slider{
+                                .ui-slider{
+                                    background-color: $color_gray_300 !important;
+                                    height: 5px;
+                                    border-radius: 10px;
+                                }
+                                .ui-slider-range{
+                                    background-color: $color_primary !important;
+                                    height: 5px;
+                                    border-radius: 10px;
+                                }
+                                .ui-slider-handle{
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 20px;
+                                    background-color: $color_primary !important;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                            &.wdpop_core-field-image_select{
+                                .wdpop_core--image{
+                                    figure {
+                                        border-color: $color_gray_300;
+                                    }
+                                    &.wdpop_core--active{
+                                        figure{
+                                            border-color: $color_primary;
+                                        }
+                                    }
+                                    &.wdpop_core-help{
+                                        position: static;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+}

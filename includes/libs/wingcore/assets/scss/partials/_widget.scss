@@ -1,0 +1,67 @@
+/**
+ * 04. Widget
+ */
+.wdpop_core-widgets{
+
+  > .wdpop_core-field{
+    position: relative;
+    top: -1px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 12px 15px;
+
+    .wdpop_core-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .wdpop_core-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .wdpop_core-field-text input{
+    width: 100%;
+  }
+
+  .wdpop_core-field-notice .wdpop_core-notice{
+    padding: 15px;
+  }
+}
+
+.control-section{
+
+  .wdpop_core-widgets{
+
+    > .wdpop_core-field{
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 10px 12px;
+    }
+  }
+}
+
+.wp-block{
+
+  .wdpop_core-widgets{
+    font-size: 13px;
+
+    > .wdpop_core-field{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      .button-primary{
+        color: #fff;
+      }
+
+      > .wdpop_core-title{
+
+        > h4{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

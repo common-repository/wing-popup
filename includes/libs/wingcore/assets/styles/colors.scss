@@ -1,0 +1,111 @@
+// Bootstrap variables
+:root {
+    
+    --wdpop_core-text-muted: #99A1B7;
+    --wdpop_core-gray-100: #F9F9F9;
+    --wdpop_core-gray-200: #F1F1F4;
+    --wdpop_core-gray-300: #DBDFE9;
+    --wdpop_core-gray-400: #C4CADA;
+    --wdpop_core-gray-500: #99A1B7;
+    --wdpop_core-gray-600: #78829D;
+    --wdpop_core-gray-700: #4B5675;
+    --wdpop_core-gray-800: #252F4A;
+    --wdpop_core-gray-900: #071437;
+    
+    --wdpop_core-light: #F9F9F9;
+    --wdpop_core-primary: #1B84FF;
+    --wdpop_core-secondary: #F1F1F4;
+    --wdpop_core-success: #17C653;
+    --wdpop_core-info: #7239EA;
+    --wdpop_core-warning: #F6C000;
+    --wdpop_core-danger: #F8285A;
+    --wdpop_core-dark: #1E2129;
+    
+    --wdpop_core-primary-active: #056EE9;
+    --wdpop_core-secondary-active: #C4CADA;
+    --wdpop_core-light-active: #F1F1F4;
+    --wdpop_core-success-active: #04B440;
+    --wdpop_core-info-active: #5014D0;
+    --wdpop_core-warning-active: #DEAD00;
+    --wdpop_core-danger-active: #D81A48;
+    --wdpop_core-dark-active: #111318;
+    
+    --wdpop_core-primary-light: #E9F3FF;
+    --wdpop_core-secondary-light: #F9F9F9;
+    --wdpop_core-success-light: #DFFFEA;
+    --wdpop_core-info-light: #F8F5FF;
+    --wdpop_core-warning-light: #FFF8DD;
+    --wdpop_core-danger-light: #FFEEF3;
+    --wdpop_core-dark-light: #F9F9F9;
+    --wdpop_core-light-light: #ffffff;
+    
+    --wdpop_core-primary-inverse: #ffffff;
+    --wdpop_core-secondary-inverse: #252F4A;
+    --wdpop_core-light-inverse: #252F4A;
+    --wdpop_core-success-inverse: #ffffff;
+    --wdpop_core-info-inverse: #ffffff;
+    --wdpop_core-warning-inverse: #ffffff;
+    --wdpop_core-danger-inverse: #ffffff;
+    --wdpop_core-dark-inverse: #ffffff;
+    
+    --wdpop_core-primary-clarity: rgba(27, 132, 255, 0.2);
+    --wdpop_core-secondary-clarity: rgba(249, 249, 249, 0.2);
+    --wdpop_core-success-clarity: rgba(23, 198, 83, 0.2);
+    --wdpop_core-info-clarity: rgba(114, 57, 234, 0.2);
+    --wdpop_core-warning-clarity: rgba(246, 192, 0, 0.2);
+    --wdpop_core-danger-clarity: rgba(248, 40, 90, 0.2);
+    --wdpop_core-dark-clarity: rgba(30, 33, 41, 0.2);
+    --wdpop_core-light-clarity: rgba(255, 255, 255, 0.2);
+}
+
+// Global Variables
+$color_primary : var(--wdpop_core-primary);
+$color_primary_light : var(--wdpop_core-primary-light);
+$color_primary_inverse : var(--wdpop_core-primary-inverse);
+$color_primary_active : var(--wdpop_core-primary-active);
+$color_primary_clarity : var(--wdpop_core-primary-clarity);
+
+$color_light : var(--wdpop_core-light);
+$color_light_active : var(--wdpop_core-light-active);
+$color_light_light : var(--wdpop_core-light-light);
+$color_light_inverse : var(--wdpop_core-light-inverse);
+
+
+$color_danger : var(--wdpop_core-danger);
+$color_danger_light : var(--wdpop_core-danger-light);
+$color_danger_inverse : var(--wdpop_core-danger-inverse);
+$color_danger_active : var(--wdpop_core-danger-active);
+
+$color_info : var(--wdpop_core-info);
+$color_info_light : var(--wdpop_core-info-light);
+$color_info_inverse : var(--wdpop_core-info-inverse);
+$color_info_active : var(--wdpop_core-info-active);
+
+$color_warning : var(--wdpop_core-warning);
+$color_warning_light : var(--wdpop_core-warning-light);
+$color_warning_inverse : var(--wdpop_core-warning-inverse);
+$color_warning_active : var(--wdpop_core-warning-active);
+
+$color_success : var(--wdpop_core-success);
+$color_success_light : var(--wdpop_core-success-light);
+$color_success_inverse : var(--wdpop_core-success-inverse);
+$color_success_active : var(--wdpop_core-success-active);
+
+
+$color_gray_100 : var(--wdpop_core-gray-100);
+$color_gray_200 : var(--wdpop_core-gray-200);
+$color_gray_300 : var(--wdpop_core-gray-300);
+$color_gray_400 : var(--wdpop_core-gray-400);
+$color_gray_500 : var(--wdpop_core-gray-500);
+$color_gray_600 : var(--wdpop_core-gray-600);
+$color_gray_700 : var(--wdpop_core-gray-700);
+$color_gray_800 : var(--wdpop_core-gray-800);
+$color_gray_900 : var(--wdpop_core-gray-900);
+
+
+$switcher_ball_color : rgba(250, 250, 250, 0.8);
+$border_color_btn_set : rgba(0, 0, 0, 0.04);
+$border_color_global : rgba(0, 0, 0, 0.12);
+$color_dark: var(--wdpop_core-dark);
+$color__bg: var(--wdpop_core-dark-light);
+$border_0 : 0px;
